@@ -1,0 +1,35 @@
+.footer {
+    background-color: $secondary;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+
+    &__copyright {
+        margin-top: 48px;
+        padding-top: 40px;
+        position: relative;
+        display: flex;
+        gap: 60px;
+    }
+
+    &__copyright::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 1px;
+        background-color: rgba(#ffffff, 0.3);
+    }
+
+    &__copyright-link {
+        color: rgba(#ffffff, 0.6);
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__copyright-link--first {
+        margin-right: 777px;
+    }
+}
